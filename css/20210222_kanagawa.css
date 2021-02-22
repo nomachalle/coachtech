@@ -428,7 +428,6 @@ select {
 /* セクション３：会社概要・採用情報 */
 
 #company-recruit {
-  position: relative;
   height: 200px;
   margin-bottom: 135px;
   display: flex; 

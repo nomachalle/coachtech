@@ -1,0 +1,454 @@
+@charset "uft-8";
+
+/* リセットCSS */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+
+/* ヘッダー */
+
+.header {
+  height: 70px;
+  background-color: #000;
+}
+
+.header-wrap {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  font-size: 16px;
+  margin-right: 30px;
+}
+
+.header-nav a {
+  color: #fff;
+}
+
+
+/* メインビジュアル */
+
+#eyecatch {
+  height: 500px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.eyecatch-title {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  transform: skewX(-10deg);
+}
+
+.news-title {
+  height: 40px;
+  width: 50%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.news-title p {
+  font-size: 11px;
+  padding-bottom: 5px;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+.news-title p:first-child {
+  text-indent: -0.5em;
+}
+
+.button a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #000;
+  color: #fff;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+/* セクション１：ミッション */
+#mission-wrap {
+  height: 330px;
+  background-color: #000;
+  position: relative;
+  margin-bottom: 130px;
+}
+
+#mission-wrap h2 {
+  color: #fff;
+  position: absolute;
+  top: 110px;
+  left: 15%;
+  font-size: 18px;
+  z-index: 20;
+}
+
+#mission-wrap p {
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 15%;
+  font-size: 10px;
+  z-index: 20;
+  width: 55%;
+  line-height: 1.5;
+}
+
+#mission-wrap a {
+  position: absolute;
+  top: 220px;
+  left: 15%;
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  font-size: 11px;
+  text-decoration: none;
+  padding: 10px 25px;
+  z-index: 20;
+}
+
+#mission-wrap img {
+  width: 400px;
+  position: absolute;
+  top: 25%;
+  right: 2%;
+  z-index: 10;
+}
+
+
+/* セクション２：サービス */
+
+#service-1 {
+  height: 450px;
+  background-color: #ddd;
+  position: relative;
+}
+
+#service-1 h2 {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+#service-1 .direction {
+  height: 40%;
+  width: 40%;
+  background-color: #fff ;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  z-index: 20;
+}
+
+#service-1 h3 {
+  color: #333;
+  font-size: 11px;
+  margin: 30px 30px 15px;
+}
+
+#service-1 p {
+  color: #333;
+  font-size: 10px;
+  margin: 5px 30px;
+  line-height: 1.5;
+}
+
+#service-1 a {
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  display: inline-block;
+  border: solid 1px #333;
+  color: #333;
+  font-size: 10px;
+  text-decoration: none;
+  padding: 5px 15px;
+  z-index: 20;
+}
+
+#service-1 img {
+  width: 50%;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 10;
+}
+
+#service-2 {
+  height: 400px;
+  background-color: #ddd;
+  position: relative;
+  margin-bottom: 130px;
+}
+
+#service-2 .direction {
+  height: 40%;
+  width: 40%;
+  background-color: #fff ;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  z-index: 20;
+}
+
+#service-2 h3 {
+  color: #333;
+  font-size: 11px;
+  margin: 30px 30px 15px;
+}
+
+#service-2 p {
+  color: #333;
+  font-size: 10px;
+  margin: 5px 30px;
+  line-height: 1.5;
+}
+
+#service-2 a {
+  position: absolute;
+  top: 70%;
+  left: 60%;
+  display: inline-block;
+  border: solid 1px #333;
+  color: #333;
+  font-size: 10px;
+  text-decoration: none;
+  padding: 5px 15px;
+  z-index: 20;
+}
+
+#service-2 img {
+  width: 50%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 10;
+}
+
+
+/* セクション３：会社概要・採用情報 */
+
+#company-recruit {
+  position: relative;
+  height: 200px;
+  margin-bottom: 135px;
+  display: flex; 
+  justify-content: space-between;
+} 
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+p {
+  font-size: 15px;
+}
+
+.company img ,
+.recruit img  {
+  width: 45%;
+  height: 120px;
+  object-fit: cover;
+}
+

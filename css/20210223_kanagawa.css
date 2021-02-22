@@ -208,6 +208,7 @@ select {
 
 .header-nav a {
   color: #fff;
+  text-decoration: none;
 }
 
 
@@ -377,7 +378,7 @@ select {
   height: 400px;
   background-color: #ddd;
   position: relative;
-  margin-bottom: 130px;
+  margin-bottom: 100px;
 }
 
 #service-2 .direction {
@@ -385,7 +386,7 @@ select {
   width: 40%;
   background-color: #fff ;
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 40%;
   z-index: 20;
 }
@@ -405,7 +406,7 @@ select {
 
 #service-2 a {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 60%;
   display: inline-block;
   border: solid 1px #333;
@@ -428,25 +429,179 @@ select {
 /* セクション３：会社概要・採用情報 */
 
 #company-recruit {
-  height: 200px;
-  margin-bottom: 135px;
+  position: relative;
+  height: 150px;
+  margin-bottom: 100px;
   display: flex; 
   justify-content: space-between;
 } 
 
-h2 {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 15px 0;
+.company ,
+.recruit {
+  width: 48%;
 }
 
-p {
-  font-size: 15px;
+.company h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 0;
+  color: #fff;
+  position: absolute;
+  top: 75px;
+  left: 24%;
+  transform: translate(-49px , -40px);
+}
+
+.recruit h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 0;
+  color: #fff;
+  position: absolute;
+  top: 75px;
+  right: 24%;
+  transform: translate( 25px , -36px);
+}
+
+.company h3 {
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 20%;
+}
+
+
+.recruit h3 {
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  right: 22%;
 }
 
 .company img ,
 .recruit img  {
-  width: 45%;
-  height: 120px;
+  width: 100%;
+  height: 150px;
   object-fit: cover;
 }
+
+
+/* セクション４：FAQ */ 
+
+#faq {
+  height: 100px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background-color: #000;
+  display: flex;
+}
+
+#faq h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100px;
+  margin-left: 5%;
+}
+
+#faq p {
+  color: #fff;
+  font-size: 13px;
+  line-height: 100px;
+  margin: 0 auto;
+}
+
+
+/* セクション５：コンタクト */
+
+#contact {
+  height: 350px;
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 80px;
+}
+
+#contact h3 {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+#contact p {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+#contact .direction {
+  font-size: 9px;
+}
+
+#contact a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+/* フッター */
+.footer {
+  height: 70px;
+  background-color: #000;
+}
+
+.footer-wrap {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.footer-nav ul {
+  display: flex;
+}
+
+.footer-nav li {
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.small {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  text-align: center;
+}
+
+ small {
+   color: #fff;
+   font-size: 9px;
+ }

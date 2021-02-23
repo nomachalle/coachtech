@@ -372,6 +372,8 @@ select {
   top: 50px;
   right: 0;
   z-index: 10;
+  max-width: 650px;
+  object-fit: contain;
 }
 
 #service-2 {
@@ -423,6 +425,7 @@ select {
   top: 50px;
   left: 0;
   z-index: 10;
+  max-height: 300px;
 }
 
 

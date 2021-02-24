@@ -606,22 +606,13 @@ body {
 
   /* FAQ */
 
-  .faq-title,
-  .faq-title-jp {
-    display:block;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
+  .faq {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 45%;
+   padding: 50px 15%;
   }
-
-  .faq-title {
-    font-size: 40px;
-  }
-
-  .faq-title-jp {
-    margin-top: 15px;
-  }
-
 
   /* フッター */
 

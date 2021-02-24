@@ -606,8 +606,20 @@ body {
 
   /* FAQ */
 
+  .faq-title,
+  .faq-title-jp {
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
   .faq-title {
-    font-size: 30px;
+    font-size: 40px;
+  }
+
+  .faq-title-jp {
+    margin-top: 15px;
   }
 
 
